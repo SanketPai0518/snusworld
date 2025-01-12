@@ -8,7 +8,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      background: black; /* Black background for contrast */
       color: white;
       text-align: center;
       display: flex;
@@ -20,6 +20,7 @@
     h1 {
       font-size: 3em;
       margin: 0.5em 0;
+      color: #87CEFA; /* Light sky blue for the heading */
     }
 
     p {
@@ -28,7 +29,7 @@
     }
 
     a {
-      color: #ffd700;
+      color: #87CEFA; /* Light sky blue for links */
       font-weight: bold;
       text-decoration: none;
       border-bottom: 2px solid transparent;
@@ -36,23 +37,40 @@
     }
 
     a:hover {
-      border-bottom: 2px solid #ffd700;
+      border-bottom: 2px solid #87CEFA; /* Light blue underline on hover */
     }
 
     .container {
       max-width: 600px;
       padding: 2em;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
       border-radius: 15px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1em;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888; /* Gray text for footer */
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <img src="logo.png" alt="Snus World Logo" class="logo" />
     <h1>Welcome to SnusWorld!</h1>
     <p>We are moving to a new website: <a href="https://pouched.in">pouched.in</a>.</p>
     <p>You will be redirected in 10–15 seconds. Alternatively, you can click the link above.</p>
   </div>
+  <footer>Powered by Snus World © 2025</footer>
 </body>
 </html>
